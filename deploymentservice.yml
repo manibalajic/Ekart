@@ -14,10 +14,12 @@ spec:
     spec:
       containers:
         - name: ekart
-          image: dockerluv/manibalaji/ekart:v1 # Image that will be used to containers in the cluster
+          image: dockerluv/manibalaji:ekart # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8070 # The port that the container is running on in the cluster
+      imagePullSecrets:
+        - name: docker-hub-cred
 
 
 ---
