@@ -106,7 +106,7 @@ To exit the application, press **ctrl-c**.
 It is possible to run **shopping-cart** using Docker:
 
 Build Docker image:
-```bash
+
 $ mvn clean package
 $ docker build -t shopping-cart:dev -f docker/Dockerfile .
 ```
